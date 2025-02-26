@@ -1,7 +1,77 @@
+* {
+  background-color: rgb(225, 252, 252);
+}
 .header-img {
   width: 50%;
 }
 
-img {
-  width: 50%;
+.day-cream-img {
+  width: 80%;
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: start;
+  border-radius: 1rem;
+}
+
+.day-cream-text {
+  margin-left: 5rem;
+  justify-self: end;
+  background-color: orange;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.daycreamh1,
+.daycreamp {
+  background-color: orange;
+}
+
+.hand-cream-img {
+  width: 80%;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: end;
+  border-radius: 1rem;
+}
+
+.hand-cream-text {
+  margin-right: 5rem;
+  justify-self: start;
+}
+
+.serum-img {
+  width: 80%;
+  grid-column: 1;
+  grid-row: 3;
+  justify-self: start;
+  border-radius: 1rem;
+}
+
+.serum-text {
+  margin-left: 5rem;
+}
+
+.night-cream-img {
+  width: 80%;
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: end;
+  border-radius: 1rem;
+}
+
+.night-cream-text {
+  margin-right: 5rem;
+}
+
+.homepage-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 5rem;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: 5rem;
 }
