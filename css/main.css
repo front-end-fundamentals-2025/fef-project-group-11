@@ -14,13 +14,9 @@
 }
 
 .day-cream-text {
+  background-color: orange;
   margin-left: 5rem;
   justify-self: end;
-  background-color: orange;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 
 .daycreamh1,
