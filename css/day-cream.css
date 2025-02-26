@@ -4,5 +4,21 @@
 }
 img {
   width: 90%;
-  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.day-cream-grape,
+.day-cream-lemon,
+.day-cream-orange {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+span {
+  margin-left: 7.5rem;
 }
