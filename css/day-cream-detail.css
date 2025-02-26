@@ -1,0 +1,23 @@
+img {
+  width: 80%;
+}
+
+.price {
+  margin-left: 10rem;
+}
+
+.how-to-use {
+  display: none;
+}
+
+.how-to-plus {
+  margin-left: 30rem;
+}
+
+.ingredients {
+  display: none;
+}
+
+.ingredients-plus {
+  margin-left: 30rem;
+}
