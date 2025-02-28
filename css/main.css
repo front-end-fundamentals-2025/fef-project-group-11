@@ -11,19 +11,12 @@
   grid-row: 1;
   justify-self: start;
   border-radius: 1rem;
-  background-color: orange;
-  padding-right: 30rem;
+  margin-left: 10rem;
 }
 
 .day-cream-text {
-  background-color: orange;
   justify-self: end;
-  padding-right: 7rem;
-}
-
-.daycreamh1,
-.daycreamp {
-  background-color: orange;
+  margin-right: 5rem;
 }
 
 .hand-cream-img {
@@ -32,20 +25,12 @@
   grid-row: 2;
   justify-self: end;
   border-radius: 1rem;
-  background-color: orange;
-  padding-left: 30rem;
+  margin-right: 10rem;
 }
 
 .hand-cream-text {
-  background-color: orange;
   justify-self: start;
-  position: relative;
-  margin-left: 10rem;
-}
-
-.handcreamh1,
-.handcreamp {
-  background-color: orange;
+  margin-left: 5rem;
 }
 
 .serum-img {
