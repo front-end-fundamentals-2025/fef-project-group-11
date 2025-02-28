@@ -2,11 +2,11 @@
   background-color: rgb(225, 252, 252);
 }
 .header-img {
-  width: 50%;
+  width: 100%;
 }
 
 .day-cream-img {
-  width: 80%;
+  width: 70%;
   grid-column: 1;
   grid-row: 1;
   justify-self: start;
@@ -16,11 +16,12 @@
 
 .day-cream-text {
   justify-self: end;
-  margin-right: 5rem;
+  margin-right: 10rem;
+  margin-left: 5rem;
 }
 
 .hand-cream-img {
-  width: 80%;
+  width: 70%;
   grid-column: 2;
   grid-row: 2;
   justify-self: end;
@@ -30,30 +31,35 @@
 
 .hand-cream-text {
   justify-self: start;
-  margin-left: 5rem;
+  margin-left: 10rem;
+  margin-right: 5rem;
 }
 
 .serum-img {
-  width: 80%;
+  width: 70%;
   grid-column: 1;
   grid-row: 3;
   justify-self: start;
   border-radius: 1rem;
+  margin-left: 10rem;
 }
 
 .serum-text {
+  margin-right: 10rem;
   margin-left: 5rem;
 }
 
 .night-cream-img {
-  width: 80%;
+  width: 70%;
   grid-column: 2;
   grid-row: 4;
   justify-self: end;
   border-radius: 1rem;
+  margin-right: 10rem;
 }
 
 .night-cream-text {
+  margin-left: 10rem;
   margin-right: 5rem;
 }
 
