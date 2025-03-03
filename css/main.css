@@ -1,84 +1,152 @@
 * {
-  background-color: rgb(225, 252, 252);
+  background-color: rgb(253, 248, 225);
 }
 .header-img {
-  width: 50%;
+  width: 100%;
+}
+
+button {
+  background-color: pink;
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+}
+
+.day-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
 }
 
 .day-cream-img {
-  width: 80%;
-  grid-column: 1;
-  grid-row: 1;
-  justify-self: start;
-  border-radius: 1rem;
-  background-color: orange;
-  padding-right: 30rem;
+  width: 30%;
+  object-fit: cover;
+  border-top-left-radius: 15rem 5rem;
+  border-bottom-left-radius: 15rem 5rem;
+  padding-left: 10rem;
 }
 
 .day-cream-text {
-  background-color: orange;
-  justify-self: end;
-  padding-right: 7rem;
+  width: 50%;
+  background-color: rgb(255, 187, 119);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
 }
 
 .daycreamh1,
 .daycreamp {
-  background-color: orange;
+  background-color: rgb(255, 187, 119);
+}
+
+.hand-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
 }
 
 .hand-cream-img {
-  width: 80%;
-  grid-column: 2;
-  grid-row: 2;
-  justify-self: end;
-  border-radius: 1rem;
-  background-color: orange;
-  padding-left: 30rem;
+  width: 30%;
+  object-fit: cover;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+  margin-right: 10rem;
 }
 
 .hand-cream-text {
-  background-color: orange;
-  justify-self: start;
-  position: relative;
+  width: 50%;
+  background-color: rgb(201, 223, 213);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
 }
 
 .handcreamh1,
 .handcreamp {
-  background-color: orange;
+  background-color: rgb(201, 223, 213);
 }
 
-.serum-img {
-  width: 80%;
-  grid-column: 1;
-  grid-row: 3;
-  justify-self: start;
-  border-radius: 1rem;
-}
-
-.serum-text {
-  margin-left: 5rem;
-}
-
-.night-cream-img {
-  width: 80%;
-  grid-column: 2;
-  grid-row: 4;
-  justify-self: end;
-  border-radius: 1rem;
-}
-
-.night-cream-text {
-  margin-right: 5rem;
-}
-
-.homepage-products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  row-gap: 5rem;
-  align-items: center;
+.serum {
+  display: flex;
+  align-items: stretch;
   margin-left: 0rem;
   margin-right: 0rem;
   margin-top: 5rem;
+}
+
+.serum-img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
+}
+
+.serum-text {
+  width: 50%;
+  background-color: rgb(255, 141, 149);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+}
+
+.serumh1,
+.serump {
+  background-color: rgb(255, 141, 149);
+}
+
+.night-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
+}
+
+.night-cream-img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+}
+
+.night-cream-text {
+  width: 50%;
+  background-color: rgb(254, 180, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
+}
+
+.nightcreamh1,
+.nightcreamp {
+  background-color: rgb(254, 180, 205);
 }
