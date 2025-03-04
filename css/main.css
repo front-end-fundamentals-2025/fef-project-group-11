@@ -73,6 +73,11 @@ nav {
   cursor: pointer;
 }
 
+.welcome-text {
+font-size: 1.5rem;
+text-align: center;
+}
+
 .serum {
   display: flex;
   align-items: stretch;
@@ -245,4 +250,9 @@ nav {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+}
+
+.footer-img {
+width:100%;
+margin-top: 4rem;
 }
