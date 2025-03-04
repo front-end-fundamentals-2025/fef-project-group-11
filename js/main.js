@@ -27,3 +27,17 @@ ingredientsButtonElement.addEventListener("click", function (event) {
     ingredientsPlusElement.innerText = "+";
   }
 });
+
+/*shopping cart*/
+const cartButtonElement = document.getElementsByClassName("cart-button")[0];
+const shoppingCartElement =
+  document.getElementsByClassName("shopping-container")[0];
+const hiddenElement = document.getElementsById("hidden");
+
+cartButtonElement.addEventListener("click", function (event) {
+  if (hiddenElement.style.display === "none") {
+    shoppingCartElement.style.display = "block";
+  } else {
+    shoppingCartElement.style.display = "none";
+  }
+});

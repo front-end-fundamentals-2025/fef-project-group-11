@@ -28,9 +28,12 @@ nav {
   align-items: center;
 }
 
-.cart {
+.cart-button {
   margin-left: 10rem;
   scale: 0.75;
+  border: none;
+  background-color: rgb(253, 248, 225);
+  cursor: pointer;
 }
 
 .cart-icon {
@@ -263,13 +266,83 @@ a {
 }
 
 /*SHOPPING CART CSS*/
-.shopping-cart {
+#hidden {
+  display: none;
+}
+
+.shopping-container {
   width: 30rem;
-  background-color: aqua;
+  background-color: rgb(253, 248, 225);
   position: fixed;
   z-index: 9999;
   top: 0;
   right: 0;
-  bottom: 1%;
+  bottom: 20%;
   display: grid;
+  grid-template-columns: repeat (1, 1fr);
+  grid-template-rows: repeat (1, 1fr);
+  border-left: 0.2rem solid rgb(255, 217, 150);
+  border-bottom: 0.2rem solid rgb(255, 217, 150);
+}
+
+.shopping-container h1 {
+  text-align: center;
+  margin-top: 3rem;
+  grid-column: 1/2;
+  letter-spacing: 0.08rem;
+}
+
+.cart-container {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat (2, 1fr);
+  align-items: start;
+}
+
+.cart-text {
+  grid-column: 2;
+  grid-row: 1;
+  margin-right: 5rem;
+}
+
+.checkout-button {
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  background-color: pink;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 18rem;
+  justify-self: center;
+}
+
+.checkout-img {
+  width: 50%;
+  margin-left: 2rem;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#decrement,
+#increment {
+  background-color: rgb(253, 248, 225);
+  border: none;
+  font-size: 1rem;
+}
+
+#input {
+  background-color: rgb(253, 248, 225);
+  border: none;
+  width: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
