@@ -1,4 +1,4 @@
-* {
+body {
   background-color: rgb(253, 248, 225);
 }
 
@@ -9,7 +9,7 @@ header {
   padding-bottom: 1.5rem;
   width: 100%;
   position: sticky;
-  z-index: 1000;
+  z-index: 100;
   letter-spacing: 0.08rem;
   top: 0;
 }
@@ -22,19 +22,24 @@ header {
   margin-top: 2rem;
 }
 
+nav {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+
 .cart {
-  position: absolute;
-  margin-left: 15rem;
+  margin-left: 10rem;
+  scale: 0.75;
+}
+
+.cart-icon {
+  display: flex;
 }
 
 a {
   margin-left: 3rem;
   text-decoration: none;
-}
-
-nav {
-  width: 100%;
-  text-align: center;
 }
 
 .offer-text {
@@ -62,7 +67,7 @@ nav {
 
 .browse-button {
   position: absolute;
-  top: 92%;
+  top: 70%;
   left: 40%;
   z-index: 2;
   background-color: pink;
@@ -74,8 +79,8 @@ nav {
 }
 
 .welcome-text {
-font-size: 1.5rem;
-text-align: center;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .serum {
@@ -114,7 +119,7 @@ text-align: center;
 }
 
 .serum-button {
-  background-color: pink
+  background-color: pink;
   border: none;
   border-radius: 2rem;
   width: 20rem;
@@ -253,6 +258,18 @@ text-align: center;
 }
 
 .footer-img {
-width:100%;
-margin-top: 4rem;
+  width: 100%;
+  margin-top: 4rem;
+}
+
+/*SHOPPING CART CSS*/
+.shopping-cart {
+  width: 30rem;
+  background-color: aqua;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  bottom: 1%;
+  display: grid;
 }
