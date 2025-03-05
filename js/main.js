@@ -7,9 +7,6 @@ const ingredientsButtonElement =
 const ingredientsElement = document.getElementsByClassName("ingredients")[0];
 const ingredientsPlusElement =
   document.getElementsByClassName("ingredients-plus")[0];
-const cartButtonElement = document.getElementById("cart-button")[5];
-const shoppingCartElement =
-  document.getElementsByClassName("shopping-container");
 
 howToButtonElement.addEventListener("click", function (event) {
   if (howToTextElement.style.display === "none") {
@@ -28,12 +25,5 @@ ingredientsButtonElement.addEventListener("click", function (event) {
   } else {
     ingredientsElement.style.display = "none";
     ingredientsPlusElement.innerText = "+";
-  }
-});
-
-/*shopping cart*/
-cartButtonElement.addEventListener("click", function (event) {
-  if (shoppingCartElement.style.display === "none") {
-    shoppingCartElement.style.display = "grid";
   }
 });

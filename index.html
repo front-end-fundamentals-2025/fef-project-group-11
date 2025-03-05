@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
   </head>
   <body>
     <!-- Header-->
@@ -29,7 +30,7 @@
 
     <main>
       <!--SHOPPING CART HTML-->
-      <section class="shopping-container">
+      <section id="shopping-container">
         <h1>SHOPPING CART</h1>
         <section class="cart-container">
           <img class="checkout-img" src="img/day-cream-grape.png" alt="" />
@@ -41,7 +42,10 @@
             <button id="increment">+</button>
           </section>
         </section>
-        <button class="checkout-button">CHECK OUT</button>
+        <section class="two-buttons-cart">
+          <button class="checkout-button">CHECK OUT</button>
+          <button class="close-window-button">CLOSE WINDOW</button>
+        </section>
       </section>
 
       <p class="offer-text">
