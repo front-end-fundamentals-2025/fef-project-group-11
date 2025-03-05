@@ -264,7 +264,7 @@ a {
 
 /*SHOPPING CART CSS*/
 
-.shopping-container {
+#shopping-container {
   width: 30rem;
   background-color: rgb(253, 248, 225);
   position: fixed;
@@ -279,7 +279,7 @@ a {
   border-bottom: 0.2rem solid rgb(255, 217, 150);
 }
 
-.shopping-container h1 {
+#shopping-container h1 {
   text-align: center;
   margin-top: 3rem;
   grid-column: 1/2;
@@ -299,17 +299,34 @@ a {
   margin-right: 5rem;
 }
 
+.two-buttons-cart {
+  display: flex;
+  justify-self: center;
+  gap: 3rem;
+}
+
 .checkout-button {
   border: none;
-  width: 20rem;
+  width: 10rem;
   height: 3rem;
   border-radius: 3rem;
   margin-bottom: 3rem;
   background-color: pink;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
-  margin-top: 18rem;
-  justify-self: center;
+  margin-top: 14rem;
+}
+
+.close-window-button {
+  border: none;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 3rem;
+  margin-bottom: 3rem;
+  background-color: pink;
+  font-size: 0.8rem;
+  cursor: pointer;
+  margin-top: 14rem;
 }
 
 .checkout-img {

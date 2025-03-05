@@ -24,11 +24,12 @@ main {
   display: flex;
 }
 
-img {
-  width: 40%;
+.cream-img {
+  width: 30%;
   display: flex;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  height: fit-content;
 }
 
 .select-item {
