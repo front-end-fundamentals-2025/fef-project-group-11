@@ -6,6 +6,7 @@
     <title>Group 11</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <!-- Header-->
@@ -19,11 +20,30 @@
         <a href="night-cream.html">NIGHT CREAM</a>
         <a href="serum.html">SERUM</a>
         <a href="all-products.html">ALL PRODUCTS</a>
-        <a class="cart" href="cart.html">CART</a>
+        <button id="cart-button">
+          Cart
+          <!-- <img class="cart-icon" src="img/cart-icon.png" alt="" /> -->
+        </button>
       </nav>
     </header>
 
     <main>
+      <!--SHOPPING CART HTML-->
+      <section class="shopping-container">
+        <h1>SHOPPING CART</h1>
+        <section class="cart-container">
+          <img class="checkout-img" src="img/day-cream-grape.png" alt="" />
+          <section class="cart-text">
+            <h3>DAY CREAM GRAPE</h3>
+            <p>199 SEK</p>
+            <button id="decrement">-</button>
+            <input type="number" id="input" value="0" readonly />
+            <button id="increment">+</button>
+          </section>
+        </section>
+        <button class="checkout-button">CHECK OUT</button>
+      </section>
+
       <p class="offer-text">
         BUY 3 PRODUCTS - GET 1 FOR FREE
         <span class="code">USE CODE: SORBÈFREE</span>
