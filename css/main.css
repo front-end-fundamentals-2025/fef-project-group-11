@@ -48,10 +48,6 @@ nav {
   cursor: pointer;
 }
 
-/* .cart-icon {
-  display: flex;
-} */
-
 a {
   margin-left: 3rem;
   text-decoration: none;
@@ -403,8 +399,13 @@ a {
 .footer-img {
   width: 100%;
   margin-top: 4rem;
+  margin-bottom: 0;
 }
 
+.copy-right {
+  background-color: #c9dfd5;
+  margin-top: 0;
+}
 /*SHOPPING CART CSS*/
 
 #shopping-container {

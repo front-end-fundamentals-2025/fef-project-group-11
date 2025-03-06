@@ -6,25 +6,46 @@
     <title>Group 11</title>
     <link rel="stylesheet" href="css/hand-cream.css" />
     <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
-    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
   </head>
   <body>
     <!-- Header-->
+
     <header class="header">
-      <a href="index.html">SORBÈ</a>
+      <a class="logo" href="index.html">SORBÈ</a>
 
       <nav>
-        <a href="day-cream.html">Day Cream</a>
-        <a href="hand-cream.html">Hand Cream</a>
-        <a href="night-cream.html">Night Cream</a>
-        <a href="serum.html">Serum</a>
-        <a href="all-products.html">All Products</a>
+        <a href="day-cream.html">DAY CREAM</a>
+        <a href="hand-cream.html">HAND CREAM</a>
+        <a href="night-cream.html">NIGHT CREAM</a>
+        <a href="serum.html">SERUM</a>
+        <a href="all-products.html">ALL PRODUCTS</a>
+        <button id="cart-button">
+          <img class="cart-icon" src="img/cart-icon.png" alt="" />
+        </button>
       </nav>
-
-      <a href="cart.html">Cart</a>
     </header>
 
     <main>
+      <!--SHOPPING CART HTML-->
+      <section id="shopping-container">
+        <h1>SHOPPING CART</h1>
+        <section class="cart-container">
+          <img class="checkout-img" src="img/day-cream-grape.png" alt="" />
+          <section class="cart-text">
+            <h3>DAY CREAM GRAPE</h3>
+            <p>199 SEK</p>
+            <button id="decrement">-</button>
+            <input type="number" id="input" value="0" readonly />
+            <button id="increment">+</button>
+          </section>
+        </section>
+        <section class="two-buttons-cart">
+          <button class="checkout-button">CHECK OUT</button>
+          <button class="close-window-button">CLOSE WINDOW</button>
+        </section>
+      </section>
+
       <section class="hand-cream-container">
         <section class="hand-cream-grape">
           <a href="#"> <img src="img/hand-cream-grape.png" alt="" /></a>
