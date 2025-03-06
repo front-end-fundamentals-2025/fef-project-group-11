@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="https://use.typekit.net/izz5dre.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
   </head>
   <body>
     <!-- Header-->
@@ -21,15 +22,14 @@
         <a href="serum.html">SERUM</a>
         <a href="all-products.html">ALL PRODUCTS</a>
         <button id="cart-button">
-          Cart
-          <!-- <img class="cart-icon" src="img/cart-icon.png" alt="" /> -->
+          <img class="cart-icon" src="img/cart-icon.png" alt="" />
         </button>
       </nav>
     </header>
 
     <main>
       <!--SHOPPING CART HTML-->
-      <section class="shopping-container">
+      <section id="shopping-container">
         <h1>SHOPPING CART</h1>
         <section class="cart-container">
           <img class="checkout-img" src="img/day-cream-grape.png" alt="" />
@@ -41,12 +41,17 @@
             <button id="increment">+</button>
           </section>
         </section>
-        <button class="checkout-button">CHECK OUT</button>
+        <section class="two-buttons-cart">
+          <button class="checkout-button">CHECK OUT</button>
+          <button class="close-window-button">CLOSE WINDOW</button>
+        </section>
       </section>
 
       <p class="offer-text">
-        BUY 3 PRODUCTS - GET 1 FOR FREE
-        <span class="code">USE CODE: SORBÈFREE</span>
+        <span class="buy-three">BUY 3 PRODUCTS </span> - GET 1 FOR FREE
+        <span class="code"
+          ><span class="use-code">USE CODE:</span> SORBÈFREE</span
+        >
       </p>
       <section class="fixed-button">
         <img class="header-img" src="img/header.png" alt="" />
@@ -56,7 +61,7 @@
       </section>
 
       <section class="welcome-text">
-        <p>Playful Energy - Serious Skincare</p>
+        <p class="header-welcome">PLAYFUL ENERGY - SERIOUS SKINCARE</p>
         <p>
           High-performance formulas wrapped in vibrant bottles - because great
           skin should be fun, effortless and full of life.
@@ -66,7 +71,7 @@
       <section class="serum">
         <img class="serum-img" src="img/serum-grape.png" alt="" />
         <section class="serum-text">
-          <h1 class="serumh1">Serum</h1>
+          <h1 class="serumh1">SERUM</h1>
           <p class="serump">
             A luxurious blend of vibrant botanicals and powerful antioxidants
             designed to hydrate, brighten, and revitalize your skin. Lightweight
@@ -81,7 +86,7 @@
 
       <section class="hand-cream">
         <section class="hand-cream-text">
-          <h1 class="handcreamh1">Hand Cream</h1>
+          <h1 class="handcreamh1">HAND CREAM</h1>
           <p class="handcreamp">
             Infused with nourishing oils and vitamins, our hand cream deeply
             moisturizes and softens, leaving your hands feeling silky smooth.
@@ -97,7 +102,7 @@
       <section class="day-cream">
         <img class="day-cream-img" src="img/day-cream-orange.png" alt="" />
         <section class="day-cream-text">
-          <h1 class="daycreamh1">Day Cream</h1>
+          <h1 class="daycreamh1">DAY CREAM</h1>
           <p class="daycreamp">
             Light yet deeply hydrating, our day cream is designed to protect and
             nourish your skin throughout the day. With SPF and antioxidants, it
@@ -111,7 +116,7 @@
 
       <section class="night-cream">
         <section class="night-cream-text">
-          <h1 class="nightcreamh1">Night Cream</h1>
+          <h1 class="nightcreamh1">NIGHT CREAM</h1>
           <p class="nightcreamp">
             Our rich, rejuvenating night cream works while you sleep to deeply
             hydrate and restore your skin. Packed with calming botanicals, it

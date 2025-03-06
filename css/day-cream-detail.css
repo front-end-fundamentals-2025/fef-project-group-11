@@ -24,11 +24,12 @@ main {
   display: flex;
 }
 
-img {
-  width: 40%;
+.cream-img {
+  width: 30%;
   display: flex;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  height: fit-content;
 }
 
 .select-item {
@@ -58,14 +59,22 @@ img {
 
 .how-to-content {
   margin-top: 2rem;
-}
-
-.how-to-button,
-.ingredients-button {
   display: flex;
   flex-direction: column;
+}
+
+.info-button {
+  display: flex;
+  flex-direction: row;
   border: none;
-  width: 38rem;
+  width: auto;
+  gap: 5%;
+}
+
+.info-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .how-to-use {
