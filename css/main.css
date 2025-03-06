@@ -1,6 +1,6 @@
 :root {
   --yellow: rgb(253, 248, 225);
-  --pink: rgb(255, 83, 83);
+  --red: rgb(255, 83, 83);
   --orange: rgb(242, 151, 61);
 }
 
@@ -30,7 +30,7 @@ header {
   margin-top: 2rem;
   font-family: "ziclets", sans-serif;
   letter-spacing: 0.3rem;
-  color: var(--pink);
+  color: var(--red);
 }
 
 nav {
@@ -48,10 +48,6 @@ nav {
   cursor: pointer;
 }
 
-/* .cart-icon {
-  display: flex;
-} */
-
 a {
   margin-left: 3rem;
   text-decoration: none;
@@ -65,11 +61,14 @@ a {
   justify-content: center;
   height: 3rem;
   letter-spacing: 0.08rem;
-  border-top: 0.2rem solid rgb(255, 217, 150);
+  border-top: 0.2rem solid var(--red);
   padding-top: 2rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
+  background-color: pink;
+  margin-bottom: 0;
+  color: var(--red);
 }
 
 .buy-three {
@@ -99,26 +98,37 @@ a {
   top: 70%;
   left: 40%;
   z-index: 2;
-  background-color: pink;
   border: none;
   border-radius: 2rem;
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  background-color: pink;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
+  color: var(--red);
+  box-shadow: 0.1rem 0.1rem 0.1rem;
+  letter-spacing: 0.1rem;
 }
 
 .header-welcome {
-  font-size: 2rem;
-  font-style: italic;
+  font-family: "ziclets", sans-serif;
+  font-size: 4rem;
+  font-style: bold;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+  color: rgb(255, 141, 149);
+  text-shadow: 0.1rem 0.1rem 0.1rem red;
 }
 
 .welcome-text {
   text-align: center;
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  color: var(--red);
 }
 
 .serum {
@@ -157,18 +167,25 @@ a {
   background-color: rgb(255, 141, 149);
 }
 .serumh1 {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
   text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem red;
+  margin-bottom: 2rem;
 }
 .serump {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
 }
 .serum-button {
-  background-color: pink;
+  background-color: var(--yellow);
+  color: red;
+  box-shadow: 0.1rem 0.1rem 0.1rem red;
   border: none;
   border-radius: 2rem;
   width: 20rem;
@@ -216,18 +233,25 @@ a {
 }
 
 .handcreamh1 {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
   text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
+  margin-bottom: 2rem;
 }
 .handcreamp {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
 }
 .hand-cream-button {
-  background-color: rgb(255, 251, 192);
+  background-color: var(--yellow);
+  color: rgb(133, 166, 151);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
   border: none;
   border-radius: 2rem;
   width: 20rem;
@@ -275,19 +299,26 @@ a {
 }
 
 .daycreamh1 {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
   text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
+  margin-bottom: 2rem;
 }
 .daycreamp {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
 }
 
 .day-cream-button {
-  background-color: pink;
+  background-color: var(--yellow);
+  color: rgb(244, 139, 35);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
   border: none;
   border-radius: 2rem;
   width: 20rem;
@@ -335,18 +366,25 @@ a {
   background-color: rgb(254, 180, 205);
 }
 .nightcreamh1 {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
   text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
+  margin-bottom: 2rem;
 }
 .nightcreamp {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
-  font-size: 1.1rem;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
 }
 .night-cream-button {
-  background-color: rgb(255, 224, 192);
+  background-color: var(--yellow);
+  color: rgb(242, 97, 145);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
   border: none;
   border-radius: 2rem;
   width: 20rem;
@@ -361,8 +399,13 @@ a {
 .footer-img {
   width: 100%;
   margin-top: 4rem;
+  margin-bottom: 0;
 }
 
+.copy-right {
+  background-color: #c9dfd5;
+  margin-top: 0;
+}
 /*SHOPPING CART CSS*/
 
 #shopping-container {
@@ -385,6 +428,9 @@ a {
   margin-top: 3rem;
   grid-column: 1/2;
   letter-spacing: 0.08rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: rgb(65, 42, 5);
 }
 
 .cart-container {
@@ -398,6 +444,9 @@ a {
   grid-column: 2;
   grid-row: 1;
   margin-right: 5rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: rgb(65, 42, 5);
 }
 
 .two-buttons-cart {
@@ -416,6 +465,10 @@ a {
   font-size: 0.8rem;
   cursor: pointer;
   margin-top: 14rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: var(--red);
+  box-shadow: 0.1rem 0.1rem 0.1rem;
 }
 
 .close-window-button {
@@ -428,6 +481,10 @@ a {
   font-size: 0.8rem;
   cursor: pointer;
   margin-top: 14rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: var(--red);
+  box-shadow: 0.1rem 0.1rem 0.1rem;
 }
 
 .checkout-img {
@@ -442,6 +499,7 @@ a {
   background-color: rgb(253, 248, 225);
   border: none;
   font-size: 1rem;
+  color: rgb(65, 42, 5);
 }
 
 #input {
@@ -451,6 +509,7 @@ a {
   text-align: center;
   font-size: 0.85rem;
   font-weight: bold;
+  color: rgb(65, 42, 5);
 }
 
 input::-webkit-outer-spin-button,
