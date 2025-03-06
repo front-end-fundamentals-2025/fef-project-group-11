@@ -1,36 +1,51 @@
+:root {
+  --yellow: rgb(253, 248, 225);
+  --pink: rgb(255, 83, 83);
+  --orange: rgb(242, 151, 61);
+}
+
 body {
   background-color: rgb(253, 248, 225);
 }
 
 header {
-  background-color: rgb(253, 248, 225);
-  display: flex;
-  flex-direction: column;
+  background-color: var(--yellow);
   padding-bottom: 1.5rem;
   width: 100%;
   position: sticky;
   z-index: 100;
   letter-spacing: 0.08rem;
   top: 0;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
 }
 
 .logo {
+  display: flex;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  font-family: "ziclets", sans-serif;
+  letter-spacing: 0.3rem;
+  color: var(--pink);
 }
 
 nav {
-  width: 100%;
-  text-align: center;
+  display: flex;
   align-items: center;
+  justify-content: end;
+  margin-right: 5rem;
 }
 
 #cart-button {
   margin-left: 10rem;
   background-color: rgb(253, 248, 225);
+  border: none;
+  scale: 0.75;
+  cursor: pointer;
 }
 
 /* .cart-icon {
@@ -40,6 +55,9 @@ nav {
 a {
   margin-left: 3rem;
   text-decoration: none;
+  margin-right: 2rem;
+  color: var(--orange);
+  font-size: 1.1rem;
 }
 
 .offer-text {
@@ -111,13 +129,24 @@ a {
   margin-right: 10rem;
   border-top-right-radius: 5rem 5rem;
   border-bottom-right-radius: 5rem 5rem;
+  line-height: 1.5rem;
 }
 
 .serumh1,
 .serump {
   background-color: rgb(255, 141, 149);
 }
-
+.serumh1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.serump {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
 .serum-button {
   background-color: pink;
   border: none;
@@ -125,6 +154,8 @@ a {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
 }
 
 .hand-cream {
@@ -154,6 +185,7 @@ a {
   margin-left: 10rem;
   border-top-left-radius: 5rem 5rem;
   border-bottom-left-radius: 5rem 5rem;
+  line-height: 1.5rem;
 }
 
 .handcreamh1,
@@ -161,6 +193,17 @@ a {
   background-color: rgb(201, 223, 213);
 }
 
+.handcreamh1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.handcreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
 .hand-cream-button {
   background-color: rgb(255, 251, 192);
   border: none;
@@ -168,6 +211,8 @@ a {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
 }
 
 .day-cream {
@@ -197,11 +242,24 @@ a {
   margin-right: 10rem;
   border-top-right-radius: 5rem 5rem;
   border-bottom-right-radius: 5rem 5rem;
+  line-height: 1.5rem;
 }
 
 .daycreamh1,
 .daycreamp {
   background-color: rgb(255, 187, 119);
+}
+
+.daycreamh1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.daycreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .day-cream-button {
@@ -211,6 +269,8 @@ a {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
 }
 
 .night-cream {
@@ -241,13 +301,24 @@ a {
   margin-left: 10rem;
   border-top-left-radius: 5rem 5rem;
   border-bottom-left-radius: 5rem 5rem;
+  line-height: 1.5rem;
 }
 
 .nightcreamh1,
 .nightcreamp {
   background-color: rgb(254, 180, 205);
 }
-
+.nightcreamh1 {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+}
+.nightcreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
 .night-cream-button {
   background-color: rgb(255, 224, 192);
   border: none;
@@ -255,6 +326,8 @@ a {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
 }
 
 .footer-img {
