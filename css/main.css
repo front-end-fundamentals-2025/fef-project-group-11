@@ -67,6 +67,17 @@ a {
   letter-spacing: 0.08rem;
   border-top: 0.2rem solid rgb(255, 217, 150);
   padding-top: 2rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.buy-three {
+  font-weight: bold;
+}
+
+.use-code {
+  font-weight: bold;
 }
 
 .code {
@@ -94,11 +105,20 @@ a {
   width: 20rem;
   height: 2rem;
   cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+}
+
+.header-welcome {
+  font-size: 2rem;
+  font-style: italic;
 }
 
 .welcome-text {
-  font-size: 1.5rem;
   text-align: center;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
 }
 
 .serum {
@@ -156,6 +176,8 @@ a {
   cursor: pointer;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .hand-cream {
@@ -213,6 +235,8 @@ a {
   cursor: pointer;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .day-cream {
@@ -271,6 +295,8 @@ a {
   cursor: pointer;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .night-cream {
@@ -328,6 +354,8 @@ a {
   cursor: pointer;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
 }
 
 .footer-img {
