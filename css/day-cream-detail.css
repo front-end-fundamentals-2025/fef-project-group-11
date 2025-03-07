@@ -36,7 +36,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   margin-right: 5rem;
 }
 
@@ -167,6 +167,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+/*DETAIL PAGE*/
 main {
   margin-right: 7rem;
   margin-left: 7rem;
@@ -194,7 +195,7 @@ main {
 }
 
 .cream-img {
-  width: 30%;
+  width: 40%;
   display: flex;
   border-radius: 1rem;
   margin-bottom: 2rem;
