@@ -2,6 +2,7 @@
   --yellow: rgb(253, 248, 225);
   --red: rgb(255, 83, 83);
   --orange: rgb(242, 151, 61);
+  --brown: rgb(65, 42, 5);
 }
 
 body {
@@ -55,6 +56,7 @@ a {
   color: var(--orange);
   font-size: 1.1rem;
 }
+
 /*SHOPPING CART CSS*/
 
 #shopping-container {
@@ -79,7 +81,7 @@ a {
   letter-spacing: 0.08rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
-  color: rgb(65, 42, 5);
+  color: var(--brown);
 }
 
 .cart-container {
@@ -95,11 +97,11 @@ a {
   margin-right: 5rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
-  color: rgb(65, 42, 5);
+  color: var(--brown);
 }
 
 .total-price {
-  border-top: 0.1rem solid rgb(65, 42, 5);
+  border-top: 0.1rem solid var(--brown);
   margin-left: 2rem;
   margin-right: 2rem;
   margin-top: 10rem;
@@ -159,7 +161,7 @@ a {
   background-color: rgb(253, 248, 225);
   border: none;
   font-size: 1rem;
-  color: rgb(65, 42, 5);
+  color: var(--brown);
   cursor: pointer;
 }
 
@@ -170,7 +172,7 @@ a {
   text-align: center;
   font-size: 0.85rem;
   font-weight: bold;
-  color: rgb(65, 42, 5);
+  color: var(--brown);
 }
 
 input::-webkit-outer-spin-button,
@@ -181,7 +183,7 @@ input::-webkit-inner-spin-button {
 
 /*DETAIL PAGE*/
 main {
-  margin-right: 7rem;
+  margin-right: 12rem;
   margin-left: 7rem;
   margin-top: 2rem;
 }
@@ -189,48 +191,73 @@ main {
 .img-text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
 }
 .content-container {
   display: flex;
+  justify-content: start;
 }
 
 .content-text {
   display: flex;
   flex-direction: column;
-  margin-left: 8rem;
+  color: var(--brown);
+}
+
+h1 {
+  font-family: "futura", sans-serif;
+  font-size: 1.8rem;
 }
 
 .price {
-  font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  margin-top: 0rem;
+  font-family: "futura", sans-serif;
+}
+
+p {
+  font-family: "futura-pt", sans-serif;
 }
 
 .cream-img {
-  width: 40em;
+  width: 25em;
   display: flex;
+  place-self: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  border: 1rem;
+  filter: drop-shadow(0rem 0rem 0.05rem var(--orange));
 }
 
 .select-item {
   background-color: rgb(255, 231, 235);
-  width: 2rem;
+  font-family: "futura-pt", sans-serif;
+  letter-spacing: 0.05rem;
+  width: 100%;
   height: 2rem;
   display: flex;
-  margin-bottom: 2rem;
-  width: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.4rem;
-  border-color: pink;
+  border: none;
   font-size: 1rem;
   text-align: center;
 }
 
 .add-to-cart {
   display: flex;
-  margin-left: 1rem;
-  background-color: rgb(255, 231, 235);
-  border-color: pink;
+  font-family: "futura-pt", sans-serif;
+  background-color: var(--red);
+  color: var(--yellow);
+  font-weight: bold;
+  letter-spacing: 0.08rem;
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
 }
 
 .how-to-content {
@@ -245,12 +272,19 @@ main {
   border: none;
   width: auto;
   gap: 5%;
+  background-color: var(--yellow);
+  border-top: 0.1rem solid var(--brown);
+}
+
+#ingredients-button {
+  border-bottom: 0.1rem solid var(--brown);
 }
 
 .info-text {
   display: flex;
   justify-content: center;
   width: 100%;
+  color: var(--brown);
 }
 
 .how-to-use {
