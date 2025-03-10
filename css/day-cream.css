@@ -1,3 +1,5 @@
+/*COLORS*/
+
 :root {
   --yellow: rgb(253, 248, 225);
   --red: rgb(255, 83, 83);
@@ -7,6 +9,8 @@
 body {
   background-color: rgb(253, 248, 225);
 }
+
+/*HEADER*/
 
 header {
   background-color: var(--yellow);
@@ -161,13 +165,14 @@ a {
   font-weight: bold;
   color: rgb(65, 42, 5);
 }
-
+/*HIDE ARROWS FROM INPUT NUMBER*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/*DAY CREAM */
 .day-cream-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

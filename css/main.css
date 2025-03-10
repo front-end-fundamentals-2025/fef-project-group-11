@@ -1,3 +1,5 @@
+/*COLORS*/
+
 :root {
   --yellow: rgb(253, 248, 225);
   --red: rgb(255, 83, 83);
@@ -7,7 +9,7 @@
 body {
   background-color: rgb(253, 248, 225);
 }
-
+/*HEADER*/
 header {
   background-color: var(--yellow);
   padding-bottom: 1.5rem;
@@ -56,358 +58,6 @@ a {
   font-size: 1.1rem;
 }
 
-.offer-text {
-  display: flex;
-  justify-content: center;
-  height: 3rem;
-  letter-spacing: 0.08rem;
-  border-top: 0.2rem solid var(--red);
-  padding-top: 2rem;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  font-size: 1.1rem;
-  background-color: pink;
-  margin-bottom: 0;
-  color: var(--red);
-}
-
-.buy-three {
-  font-weight: bold;
-}
-
-.use-code {
-  font-weight: bold;
-}
-
-.code {
-  margin-left: 5rem;
-}
-
-.header-img {
-  width: 100%;
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-
-.fixed-button {
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.browse-link {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.browse-button {
-  border: none;
-  border-radius: 2rem;
-  width: 20rem;
-  height: 2rem;
-  cursor: pointer;
-  background-color: pink;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  color: var(--red);
-  box-shadow: 0.1rem 0.1rem 0.1rem;
-  letter-spacing: 0.1rem;
-}
-
-.header-welcome {
-  font-family: "ziclets", sans-serif;
-  font-size: 4rem;
-  font-style: bold;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 0;
-  letter-spacing: 0.3rem;
-  color: rgb(255, 141, 149);
-  text-shadow: 0.1rem 0.1rem 0.1rem red;
-}
-
-.welcome-text {
-  text-align: center;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: var(--red);
-}
-
-.serum {
-  display: flex;
-  align-items: stretch;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 5rem;
-}
-
-.serum-img {
-  width: 30%;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin-left: 10rem;
-  border-top-left-radius: 5rem 5rem;
-  border-bottom-left-radius: 5rem 5rem;
-}
-
-.serum-text {
-  width: 50%;
-  background-color: rgb(255, 141, 149);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-right: 10rem;
-  border-top-right-radius: 5rem 5rem;
-  border-bottom-right-radius: 5rem 5rem;
-  line-height: 1.5rem;
-}
-
-.serumh1,
-.serump {
-  background-color: rgb(255, 141, 149);
-}
-.serumh1 {
-  font-family: "futura", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
-  text-align: center;
-  color: var(--yellow);
-  text-shadow: 0.1rem 0.1rem 0.1rem red;
-  margin-bottom: 2rem;
-}
-.serump {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  line-height: 2rem;
-  font-size: 1.4rem;
-  color: var(--yellow);
-}
-.serum-button {
-  background-color: var(--yellow);
-  color: red;
-  box-shadow: 0.1rem 0.1rem 0.1rem red;
-  border: none;
-  border-radius: 2rem;
-  width: 20rem;
-  height: 2rem;
-  cursor: pointer;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  align-self: center;
-  margin-top: 2rem;
-}
-
-.hand-cream {
-  display: flex;
-  align-items: stretch;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 5rem;
-}
-
-.hand-cream-img {
-  width: 30%;
-  object-fit: cover;
-  border-top-right-radius: 5rem 5rem;
-  border-bottom-right-radius: 5rem 5rem;
-  margin-right: 10rem;
-}
-
-.hand-cream-text {
-  width: 50%;
-  background-color: rgb(201, 223, 213);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-left: 10rem;
-  border-top-left-radius: 5rem 5rem;
-  border-bottom-left-radius: 5rem 5rem;
-  line-height: 1.5rem;
-}
-
-.handcreamh1,
-.handcreamp {
-  background-color: rgb(201, 223, 213);
-}
-
-.handcreamh1 {
-  font-family: "futura", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
-  text-align: center;
-  color: var(--yellow);
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
-  margin-bottom: 2rem;
-}
-.handcreamp {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  line-height: 2rem;
-  font-size: 1.4rem;
-  color: var(--yellow);
-}
-.hand-cream-button {
-  background-color: var(--yellow);
-  color: rgb(133, 166, 151);
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
-  border: none;
-  border-radius: 2rem;
-  width: 20rem;
-  height: 2rem;
-  cursor: pointer;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  align-self: center;
-  margin-top: 2rem;
-}
-
-.day-cream {
-  display: flex;
-  align-items: stretch;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 5rem;
-}
-
-.day-cream-img {
-  width: 30%;
-  object-fit: cover;
-  border-top-left-radius: 15rem 5rem;
-  border-bottom-left-radius: 15rem 5rem;
-  padding-left: 10rem;
-}
-
-.day-cream-text {
-  width: 50%;
-  background-color: rgb(255, 187, 119);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-right: 10rem;
-  border-top-right-radius: 5rem 5rem;
-  border-bottom-right-radius: 5rem 5rem;
-  line-height: 1.5rem;
-}
-
-.daycreamh1,
-.daycreamp {
-  background-color: rgb(255, 187, 119);
-}
-
-.daycreamh1 {
-  font-family: "futura", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
-  text-align: center;
-  color: var(--yellow);
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
-  margin-bottom: 2rem;
-}
-.daycreamp {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  line-height: 2rem;
-  font-size: 1.4rem;
-  color: var(--yellow);
-}
-
-.day-cream-button {
-  background-color: var(--yellow);
-  color: rgb(244, 139, 35);
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
-  border: none;
-  border-radius: 2rem;
-  width: 20rem;
-  height: 2rem;
-  cursor: pointer;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  align-self: center;
-  margin-top: 2rem;
-}
-
-.night-cream {
-  display: flex;
-  align-items: stretch;
-  margin-left: 0rem;
-  margin-right: 0rem;
-  margin-top: 5rem;
-}
-
-.night-cream-img {
-  width: 30%;
-  object-fit: cover;
-  border-radius: 1rem;
-  margin-right: 10rem;
-  border-top-right-radius: 5rem 5rem;
-  border-bottom-right-radius: 5rem 5rem;
-}
-
-.night-cream-text {
-  width: 50%;
-  background-color: rgb(254, 180, 205);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  margin-left: 10rem;
-  border-top-left-radius: 5rem 5rem;
-  border-bottom-left-radius: 5rem 5rem;
-  line-height: 1.5rem;
-}
-
-.nightcreamh1,
-.nightcreamp {
-  background-color: rgb(254, 180, 205);
-}
-.nightcreamh1 {
-  font-family: "futura", sans-serif;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
-  text-align: center;
-  color: var(--yellow);
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
-  margin-bottom: 2rem;
-}
-.nightcreamp {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 400;
-  line-height: 2rem;
-  font-size: 1.4rem;
-  color: var(--yellow);
-}
-.night-cream-button {
-  background-color: var(--yellow);
-  color: rgb(242, 97, 145);
-  box-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
-  border: none;
-  border-radius: 2rem;
-  width: 20rem;
-  height: 2rem;
-  cursor: pointer;
-  font-family: "futura-pt", sans-serif;
-  font-weight: 600;
-  align-self: center;
-  margin-top: 2rem;
-}
-
-.footer-img {
-  width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 0;
-}
-
-.copy-right {
-  background-color: #c9dfd5;
-  margin-top: 0;
-}
 /*SHOPPING CART CSS*/
 
 #shopping-container {
@@ -514,8 +164,376 @@ a {
   color: rgb(65, 42, 5);
 }
 
+/*HIDE ARROWS FROM INPUT NUMBER*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+/*OFFER TEXT*/
+.offer-text {
+  display: flex;
+  justify-content: center;
+  height: 3rem;
+  letter-spacing: 0.08rem;
+  border-top: 0.2rem solid var(--red);
+  padding-top: 2rem;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  background-color: pink;
+  margin-bottom: 0;
+  color: var(--red);
+}
+
+.buy-three {
+  font-weight: bold;
+}
+
+.use-code {
+  font-weight: bold;
+}
+
+.code {
+  margin-left: 5rem;
+}
+
+/*IMAGE WITH ALL PRODUCTS*/
+
+.header-img {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+/*BUTTON*/
+.fixed-button {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.browse-link {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.browse-button {
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  background-color: pink;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  color: var(--red);
+  box-shadow: 0.1rem 0.1rem 0.1rem;
+  letter-spacing: 0.1rem;
+}
+
+/*HEADLINE WELCOME TEXT*/
+.header-welcome {
+  font-family: "ziclets", sans-serif;
+  font-size: 4rem;
+  font-style: bold;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.3rem;
+  color: rgb(255, 141, 149);
+  text-shadow: 0.1rem 0.1rem 0.1rem red;
+}
+
+.welcome-text {
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+/*SERUM*/
+
+.serum {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
+}
+
+.serum-img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
+}
+
+.serum-text {
+  width: 50%;
+  background-color: rgb(255, 141, 149);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+  line-height: 1.5rem;
+}
+
+.serumh1,
+.serump {
+  background-color: rgb(255, 141, 149);
+}
+.serumh1 {
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem red;
+  margin-bottom: 2rem;
+}
+.serump {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+.serum-button {
+  background-color: var(--yellow);
+  color: red;
+  box-shadow: 0.1rem 0.1rem 0.1rem red;
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+/*HAND CREAM*/
+
+.hand-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
+}
+
+.hand-cream-img {
+  width: 30%;
+  object-fit: cover;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+  margin-right: 10rem;
+}
+
+.hand-cream-text {
+  width: 50%;
+  background-color: rgb(201, 223, 213);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
+  line-height: 1.5rem;
+}
+
+.handcreamh1,
+.handcreamp {
+  background-color: rgb(201, 223, 213);
+}
+
+.handcreamh1 {
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
+  margin-bottom: 2rem;
+}
+.handcreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+.hand-cream-button {
+  background-color: var(--yellow);
+  color: rgb(133, 166, 151);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(133, 166, 151);
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+/*DAY CREAM*/
+
+.day-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
+}
+
+.day-cream-img {
+  width: 30%;
+  object-fit: cover;
+  border-top-left-radius: 15rem 5rem;
+  border-bottom-left-radius: 15rem 5rem;
+  padding-left: 10rem;
+}
+
+.day-cream-text {
+  width: 50%;
+  background-color: rgb(255, 187, 119);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+  line-height: 1.5rem;
+}
+
+.daycreamh1,
+.daycreamp {
+  background-color: rgb(255, 187, 119);
+}
+
+.daycreamh1 {
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
+  margin-bottom: 2rem;
+}
+.daycreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+
+.day-cream-button {
+  background-color: var(--yellow);
+  color: rgb(244, 139, 35);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(244, 139, 35);
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+/*NIGHT CREAM*/
+
+.night-cream {
+  display: flex;
+  align-items: stretch;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 5rem;
+}
+
+.night-cream-img {
+  width: 30%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 10rem;
+  border-top-right-radius: 5rem 5rem;
+  border-bottom-right-radius: 5rem 5rem;
+}
+
+.night-cream-text {
+  width: 50%;
+  background-color: rgb(254, 180, 205);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-left: 10rem;
+  border-top-left-radius: 5rem 5rem;
+  border-bottom-left-radius: 5rem 5rem;
+  line-height: 1.5rem;
+}
+
+.nightcreamh1,
+.nightcreamp {
+  background-color: rgb(254, 180, 205);
+}
+.nightcreamh1 {
+  font-family: "futura", sans-serif;
+  letter-spacing: 0.2rem;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--yellow);
+  text-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
+  margin-bottom: 2rem;
+}
+.nightcreamp {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.4rem;
+  color: var(--yellow);
+}
+.night-cream-button {
+  background-color: var(--yellow);
+  color: rgb(242, 97, 145);
+  box-shadow: 0.1rem 0.1rem 0.1rem rgb(242, 97, 145);
+  border: none;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 2rem;
+  cursor: pointer;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+/*FOOTER*/
+.footer-img {
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+.copy-right {
+  background-color: #c9dfd5;
+  margin-top: 0;
 }
