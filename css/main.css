@@ -233,6 +233,16 @@ input::-webkit-inner-spin-button {
   color: var(--red);
   box-shadow: 0.1rem 0.1rem 0.1rem;
   letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+.browse-button:hover {
+  background-color: var(--yellow);
+}
+
+.browse-button:active {
+  box-shadow: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 /*TEXT UNDER IMAGE*/
@@ -296,6 +306,7 @@ input::-webkit-inner-spin-button {
 .serump {
   background-color: rgb(255, 141, 149);
 }
+
 .serumh1 {
   font-family: "futura", sans-serif;
   letter-spacing: 0.2rem;
@@ -305,6 +316,7 @@ input::-webkit-inner-spin-button {
   text-shadow: 0.1rem 0.1rem 0.1rem red;
   margin-bottom: 2rem;
 }
+
 .serump {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
@@ -312,6 +324,7 @@ input::-webkit-inner-spin-button {
   font-size: 1.4rem;
   color: var(--yellow);
 }
+
 .serum-button {
   background-color: var(--yellow);
   color: red;
@@ -325,6 +338,16 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   align-self: center;
   margin-top: 2rem;
+  cursor: pointer;
+}
+
+.serum-button:hover {
+  background-color: rgb(255, 242, 187);
+}
+
+.serum-button:active {
+  box-shadow: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 /*HAND CREAM*/
