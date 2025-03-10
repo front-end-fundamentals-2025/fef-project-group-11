@@ -1,3 +1,5 @@
+/*COLORS*/
+
 :root {
   --yellow: rgb(253, 248, 225);
   --red: rgb(255, 83, 83);
@@ -8,6 +10,8 @@
 body {
   background-color: rgb(253, 248, 225);
 }
+
+/*HEADER*/
 
 header {
   background-color: var(--yellow);
@@ -41,6 +45,14 @@ nav {
   margin-right: 5rem;
 }
 
+a {
+  margin-left: 3rem;
+  text-decoration: none;
+  margin-right: 2rem;
+  color: var(--orange);
+  font-size: 1.1rem;
+}
+
 #cart-button {
   margin-left: 10rem;
   background-color: rgb(253, 248, 225);
@@ -49,14 +61,7 @@ nav {
   cursor: pointer;
 }
 
-a {
-  margin-left: 3rem;
-  text-decoration: none;
-  margin-right: 2rem;
-  color: var(--orange);
-  font-size: 1.1rem;
-}
-/*SHOPPING CART CSS*/
+/*SHOPPING CART HEADER*/
 
 #shopping-container {
   width: 30rem;
@@ -161,6 +166,8 @@ a {
   font-weight: bold;
   color: rgb(65, 42, 5);
 }
+
+/*HIDE ARROWS FROM INPUT NUMBER*/
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

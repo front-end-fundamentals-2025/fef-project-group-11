@@ -1,4 +1,5 @@
-/*Shopping cart*/
+/*SHOPPING CART*/
+
 const cartButtonElement = document.getElementById("cart-button");
 const shoppingCartElement = document.getElementById("shopping-container");
 const closeWindowElement = document.querySelector(".close-window-button");
@@ -16,7 +17,8 @@ closeWindowElement.addEventListener("click", function (event) {
   shoppingCartElement.style.display = "none";
 });
 
-/*Adding to cart*/
+/*ADDING TO CART BUTTON*/
+
 const addToCartElement = document.querySelector(".add-to-cart");
 const cartContainerElement = document.querySelector(".cart-container");
 
@@ -24,6 +26,8 @@ addToCartElement.addEventListener("click", function (event) {
   cartContainerElement.style.display = "grid";
   shoppingCartElement.style.display = "grid";
 });
+
+/*ADDING AND REMOVING +/- */
 
 const decrementElement = document.querySelector("#decrement");
 const incrementElement = document.querySelector("#increment");
