@@ -446,6 +446,12 @@ footer {
   width: 7rem;
   height: 2.5rem;
   margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: var(--yellow);
+  color: var(--red);
 }
 
 .subscribe-text {
@@ -470,8 +476,13 @@ input {
 
 .copy-right {
   /* background-color: #c9dfd5; */
+  font-family: "futura-pt", sans-serif;
   background-color: var(--green);
   padding-left: 2rem;
+}
+
+.copy-logo {
+  padding-right: 0.5rem;
 }
 
 /*SHOPPING CART CSS*/
