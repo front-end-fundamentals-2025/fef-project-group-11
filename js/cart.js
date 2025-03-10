@@ -1,5 +1,4 @@
-/*SHOPPING CART*/
-
+/*Shopping cart*/
 const cartButtonElement = document.getElementById("cart-button");
 const shoppingCartElement = document.getElementById("shopping-container");
 const closeWindowElement = document.querySelector(".close-window-button");
@@ -17,8 +16,7 @@ closeWindowElement.addEventListener("click", function (event) {
   shoppingCartElement.style.display = "none";
 });
 
-/*ADDIING TO CART*/
-
+/*Adding to cart*/
 const addToCartElement = document.querySelector(".add-to-cart");
 const cartContainerElement = document.querySelector(".cart-container");
 
@@ -26,8 +24,6 @@ addToCartElement.addEventListener("click", function (event) {
   cartContainerElement.style.display = "grid";
   shoppingCartElement.style.display = "grid";
 });
-
-/*ADDING PLUS AND MINUS*/
 
 const decrementElement = document.querySelector("#decrement");
 const incrementElement = document.querySelector("#increment");

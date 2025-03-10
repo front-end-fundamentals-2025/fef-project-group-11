@@ -10,7 +10,7 @@
     <script src="js/main.js" defer></script>
   </head>
   <body>
-    <!--HEADER-->
+    <!-- Header-->
 
     <header class="header">
       <a class="logo" href="index.html">SORBÈ</a>
@@ -50,7 +50,6 @@
         </section>
       </section>
 
-      <!--PRODUCT IMGAGE AND DETAILS-->
       <section class="img-text">
         <img class="cream-img" src="img/day-cream-grape.png" alt="" />
         <section class="content-container">
@@ -66,30 +65,17 @@
               nourishing oils and calming ingredients, it helps balance and
               hydrate, leaving your skin soft and smooth. Whether you’re facing
               a busy day or just need a quick moisture boost, this cream keeps
-              you feeling refreshed and protected. Its lightweight formula
-              absorbs quickly, so you can go about your day with a glowing, dewy
-              finish. Free from harsh chemicals, it’s gentle on all skin types,
-              including sensitive skin. Enjoy the confidence of healthy, radiant
-              skin with every application. Infused with vitamin-rich extracts,
-              it helps to promote skin elasticity and smooth out the appearance
-              of fine lines. With regular use, you'll notice a brighter, more
-              even skin tone that radiates natural beauty. The perfect base for
-              makeup, it creates a smooth, hydrated canvas that lasts throughout
-              the day. Our day cream works hard so you can glow effortlessly,
-              from morning to night.
+              you feeling refreshed and protected.
+
+              <select class="select-item" name="Select item" id="Select item">
+                <option value="Grape">Grape</option>
+                <option value="Lemon">Lemon</option>
+                <option value="Orange">Orange</option>
+              </select>
+
+              <button class="add-to-cart">ADD TO CART</button>
             </p>
 
-            <!--SELECT ITEMS BUTTON-->
-            <select class="select-item" name="Select item" id="Select item">
-              <option value="Grape">Grape</option>
-              <option value="Lemon">Lemon</option>
-              <option value="Orange">Orange</option>
-            </select>
-
-            <!-- ADD TO CART BUTTON-->
-            <button class="add-to-cart">ADD TO CART</button>
-
-            <!--HOW TO USE BUTTON-->
             <section class="how-to-content">
               <button class="info-button">
                 <p class="info-text">HOW TO USE</p>
@@ -105,8 +91,7 @@
                 base.
               </p>
 
-              <!--INGREDIENTS BUTTON-->
-              <button class="info-button">
+              <button class="info-button" id="ingredients-button">
                 <p class="info-text">INGREDIENTS</p>
                 <p class="plus">+</p>
               </button>
