@@ -234,6 +234,7 @@ input::-webkit-inner-spin-button {
   box-shadow: 0.1rem 0.1rem 0.1rem;
   letter-spacing: 0.1rem;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .browse-button:hover {
@@ -333,12 +334,15 @@ input::-webkit-inner-spin-button {
   border-radius: 2rem;
   width: 20rem;
   height: 2rem;
-  cursor: pointer;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
-  align-self: center;
   margin-top: 2rem;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button-link {
+  align-self: center;
 }
 
 .serum-button:hover {
@@ -416,6 +420,16 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   align-self: center;
   margin-top: 2rem;
+  transition: 0.3s ease;
+}
+
+.hand-cream-button:hover {
+  background-color: rgb(255, 242, 187);
+}
+
+.hand-cream-button:active {
+  box-shadow: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 /*DAY CREAM*/
@@ -485,6 +499,16 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   align-self: center;
   margin-top: 2rem;
+  transition: 0.3s ease;
+}
+
+.day-cream-button:hover {
+  background-color: rgb(255, 242, 187);
+}
+
+.day-cream-button:active {
+  box-shadow: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 /*NIGHT CREAM*/
@@ -553,15 +577,19 @@ input::-webkit-inner-spin-button {
   font-weight: 600;
   align-self: center;
   margin-top: 2rem;
+  transition: 0.3s ease;
+}
+
+.night-cream-button:hover {
+  background-color: rgb(255, 242, 187);
+}
+
+.night-cream-button:active {
+  box-shadow: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 /*FOOTER*/
-
-/*.footer-img {
-  width: 100%;
-  margin-top: 4rem;
-  margin-bottom: 0;
-}*/
 
 footer {
   background-color: var(--green);

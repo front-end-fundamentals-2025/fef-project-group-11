@@ -5,6 +5,7 @@
   --red: rgb(255, 83, 83);
   --orange: rgb(242, 151, 61);
   --brown: rgb(65, 42, 5);
+  --green: rgb(201, 223, 213);
 }
 
 body {
@@ -190,7 +191,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p {
+.serum-info {
   text-align: center;
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
@@ -237,4 +238,82 @@ span {
   font-weight: 400;
   font-size: 1.1rem;
   color: var(--brown);
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: var(--green);
+  margin-top: 5rem;
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat (3, 1fr);
+  font-family: "futura-pt", sans-serif;
+  color: var(--brown);
+  font-weight: 500;
+}
+
+#footer-container1 {
+  grid-column: 1;
+  padding-left: 11rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
+}
+
+#footer-container2 {
+  grid-column: 2;
+  padding-left: 11rem;
+  padding-right: 5rem;
+}
+
+#footer-container3 {
+  grid-column: 3;
+  padding-left: 11rem;
+  padding-right: 5rem;
+}
+
+.subscribe-button {
+  background-color: var(--red);
+  color: var(--yellow);
+  border: none;
+  border-radius: 1.25rem;
+  width: 7rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: var(--yellow);
+  color: var(--red);
+}
+
+.subscribe-text {
+  letter-spacing: 0.01rem;
+  word-spacing: 0.02rem;
+}
+
+input {
+  background-color: var(--yellow);
+  color: var(--red);
+  border: none;
+  border-radius: 1.25rem;
+  width: 15rem;
+  height: 2.5rem;
+}
+
+::placeholder {
+  font-family: "futura-pt", sans-serif;
+  color: var(--brown);
+  padding-left: 1rem;
+}
+
+.copy-right {
+  /* background-color: #c9dfd5; */
+  background-color: var(--green);
+  padding-left: 2rem;
+}
+
+.copy-logo {
+  margin-right: 0.2rem;
 }
