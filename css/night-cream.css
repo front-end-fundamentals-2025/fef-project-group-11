@@ -240,6 +240,27 @@ span {
   color: var(--brown);
 }
 
+/*RESPONSIVE ALL PRODUCTS */
+
+@media screen and (max-width: 820px) {
+  .night-cream-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    margin-left: 3.6rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  .night-cream-info {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
 /*FOOTER*/
 
 footer {
@@ -316,4 +337,33 @@ input {
 
 .copy-logo {
   margin-right: 0.2rem;
+}
+
+/*RESPONSIVE FOOTER*/
+
+@media screen and (max-width: 820px) {
+  footer {
+    text-align: start;
+    margin-top: 3rem;
+    padding: 0;
+  }
+  #footer-container1,
+  #footer-container2,
+  #footer-container3 {
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+  }
+  #footer-container3 {
+    align-items: end;
+  }
+  input {
+    margin-bottom: 0.6rem;
+    width: 10rem;
+  }
+  .copy-logo {
+    margin-left: 1rem;
+  }
+  .copy-right {
+    padding-left: 1rem;
+  }
 }
