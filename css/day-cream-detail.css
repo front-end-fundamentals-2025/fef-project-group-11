@@ -201,7 +201,8 @@ main {
 .cream-img {
   width: 25em;
   display: flex;
-  place-self: center;
+  place-self: start;
+  justify-self: center;
   border-radius: 1rem;
   margin-bottom: 2rem;
   border: 1rem;
