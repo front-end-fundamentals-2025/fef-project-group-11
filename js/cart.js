@@ -15,6 +15,8 @@ let cartQuantity = cartElement;
 inputElement.value = cartQuantity;
 
 cartButtonElement.addEventListener("click", function (event) {
+  localStorage.setItem("cartQuantity", cartQuantity);
+  inputElement.value = cartQuantity;
   if (
     shoppingCartElement.style.display === "none" ||
     shoppingCartElement.style.display === ""

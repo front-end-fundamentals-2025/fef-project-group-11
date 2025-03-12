@@ -62,6 +62,79 @@ a {
   cursor: pointer;
 }
 
+#hamburger-button {
+  margin-left: 10rem;
+  background-color: rgb(253, 248, 225);
+  border: none;
+  scale: 0.75;
+  cursor: pointer;
+  display: none;
+}
+
+.cart-icon,
+.hamburger-icon {
+  width: 3rem;
+}
+
+.alt-header {
+  display: none;
+}
+
+.hamburger-container {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .nav-text {
+    display: none;
+  }
+
+  .alt-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    background-color: var(--yellow);
+  }
+  #cart-button {
+    margin-left: 4rem;
+    margin-right: 1rem;
+  }
+  .logo {
+    margin: 0;
+    font-size: 2rem;
+  }
+  #hamburger-button {
+    margin-right: 4rem;
+    margin-left: 1rem;
+    display: block;
+  }
+  .header {
+    display: none;
+  }
+
+  .hamburger-container {
+    display: none;
+    flex-direction: column;
+    row-gap: 3rem;
+    width: 15rem;
+    background-color: rgb(253, 248, 225);
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    bottom: 50%;
+    border-right: 0.2rem solid rgb(255, 217, 150);
+    border-bottom: 0.2rem solid rgb(255, 217, 150);
+    border-top: 0.2rem solid rgb(255, 217, 150);
+    padding-top: 2rem;
+    margin-top: 5rem;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 500;
+  }
+}
 /*SHOPPING CART HEADER*/
 
 #shopping-container {
@@ -168,6 +241,15 @@ a {
   color: rgb(65, 42, 5);
 }
 
+@media screen and (max-width: 800px) {
+  #shopping-container {
+    width: 100%;
+  }
+  .checkout-button,
+  .close-window-button {
+    margin-top: 5rem;
+  }
+}
 /*HIDE ARROWS FROM INPUT NUMBER*/
 
 input::-webkit-outer-spin-button,
@@ -242,7 +324,7 @@ span {
 
 /*RESPONSIVE ALL PRODUCTS */
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1270px) {
   .day-cream-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -258,6 +340,19 @@ span {
   .day-cream-info {
     font-size: 1.1rem;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .day-cream-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .day-cream-info {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 }
 
@@ -341,7 +436,7 @@ input {
 
 /*RESPONSIVE FOOTER*/
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1270px) {
   footer {
     text-align: start;
     margin-top: 3rem;
@@ -365,5 +460,32 @@ input {
   }
   .copy-right {
     padding-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr);
+  }
+  #footer-container3 {
+    grid-column: 1/3;
+    grid-row: 2;
+    padding-right: 0;
+    padding-top: 0;
+    align-content: center;
+  }
+  .copy-right {
+    grid-column: 1;
+    grid-row: 3;
+    padding-left: 1rem;
+  }
+  #footer-container1,
+  #footer-container2,
+  #footer-container3 {
+    padding-left: 1rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
 }
