@@ -54,7 +54,8 @@ a {
   font-size: 1.1rem;
 }
 
-#cart-button {
+#cart-button,
+#mobile-cart-button {
   margin-left: 10rem;
   background-color: rgb(253, 248, 225);
   border: none;
@@ -74,6 +75,7 @@ a {
 .cart-icon,
 .hamburger-icon {
   width: 3rem;
+  margin-top: 0;
 }
 
 .alt-header {
@@ -98,7 +100,8 @@ a {
     top: 0;
     background-color: var(--yellow);
   }
-  #cart-button {
+  #cart-button,
+  #mobile-cart-button {
     margin-left: 4rem;
     margin-right: 1rem;
   }
@@ -130,13 +133,13 @@ a {
     border-bottom: 0.2rem solid rgb(255, 217, 150);
     border-top: 0.2rem solid rgb(255, 217, 150);
     padding-top: 2rem;
-    margin-top: 5rem;
+    margin-top: 4.1rem;
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
   }
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1290px) {
   a {
     font-size: 1rem;
     margin-right: 1rem;
@@ -161,7 +164,7 @@ a {
   z-index: 9999;
   top: 0;
   right: 0;
-  bottom: 20%;
+  bottom: 15%;
   display: none;
   grid-template-columns: repeat (1, 1fr);
   grid-template-rows: repeat (1, 1fr);
@@ -195,6 +198,31 @@ a {
   color: rgb(65, 42, 5);
 }
 
+#input-price {
+  font-family: "futura-pt", sans-serif;
+  color: var(--brown);
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding-left: 2rem;
+}
+
+.total-price {
+  display: flex;
+  align-items: baseline;
+  font-family: "futura-pt", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  border-top: 0.1rem solid var(--brown);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 10rem;
+}
+
+.total {
+  margin-top: 2rem;
+  color: var(--brown);
+}
+
 .two-buttons-cart {
   display: flex;
   justify-self: center;
@@ -210,7 +238,7 @@ a {
   background-color: pink;
   font-size: 0.8rem;
   cursor: pointer;
-  margin-top: 14rem;
+  margin-top: 3rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
   color: var(--red);
@@ -226,7 +254,7 @@ a {
   background-color: pink;
   font-size: 0.8rem;
   cursor: pointer;
-  margin-top: 14rem;
+  margin-top: 3rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 600;
   color: var(--red);

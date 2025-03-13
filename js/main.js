@@ -39,4 +39,5 @@ addToCartElement.addEventListener("click", function (event) {
   cartContainerElement.style.display = "grid";
   shoppingCartElement.style.display = "grid";
   inputElement.value = cartQuantity;
+  totalPriceElement.value = cartQuantity * pricePerItem;
 });
