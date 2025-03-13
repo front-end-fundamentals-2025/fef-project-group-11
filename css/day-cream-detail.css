@@ -145,6 +145,22 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1270px) {
+  a {
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+  nav {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  #cart-button {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+}
+
 /*SHOPPING CART HEADER*/
 
 #shopping-container {

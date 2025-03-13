@@ -87,7 +87,6 @@ a {
   .nav-text {
     display: none;
   }
-
   .alt-header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -114,7 +113,6 @@ a {
   .header {
     display: none;
   }
-
   .hamburger-container {
     display: none;
     flex-direction: column;
@@ -133,6 +131,22 @@ a {
     margin-top: 5rem;
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  a {
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+  nav {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  #cart-button {
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -620,7 +634,7 @@ input::-webkit-inner-spin-button {
     margin-top: 0;
   }
   .handcreamh1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .hand-cream-text {
     padding-bottom: 2rem;
@@ -880,7 +894,7 @@ input::-webkit-inner-spin-button {
     margin-top: 0;
   }
   .nightcreamh1 {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
   }
   .night-cream-text {
     padding-bottom: 2rem;
