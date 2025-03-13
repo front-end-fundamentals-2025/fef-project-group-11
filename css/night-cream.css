@@ -12,6 +12,20 @@ body {
   background-color: rgb(253, 248, 225);
 }
 
+main {
+  animation-name: easeIn;
+  animation-duration: 1.5s;
+}
+
+@keyframes easeIn {
+  0% {
+    scale: 0.9;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 /*HEADER*/
 
 header {
@@ -39,6 +53,10 @@ header {
   color: var(--red);
 }
 
+.logo:hover {
+  border-bottom: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -54,6 +72,17 @@ a {
   font-size: 1.1rem;
 }
 
+.a-img-link:hover {
+  border-bottom: none;
+  scale: 1.03;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-shadow: 0.01rem 0.01rem 0.01rem red;
+  border-bottom: solid;
+}
+
 #cart-button,
 #mobile-cart-button {
   margin-left: 10rem;
@@ -61,6 +90,12 @@ a {
   border: none;
   scale: 0.75;
   cursor: pointer;
+}
+
+/*HAMBURGER*/
+
+.a-text {
+  padding-left: 2rem;
 }
 
 #hamburger-button {
@@ -129,7 +164,7 @@ a {
     z-index: 9999;
     top: 0;
     left: 0;
-    bottom: 50%;
+    bottom: 65%;
     border-right: 0.2rem solid rgb(255, 217, 150);
     border-bottom: 0.2rem solid rgb(255, 217, 150);
     border-top: 0.2rem solid rgb(255, 217, 150);
@@ -137,6 +172,23 @@ a {
     margin-top: 4.1rem;
     font-family: "futura-pt", sans-serif;
     font-weight: 500;
+    animation: slide-in 700ms;
+  }
+
+  .a-text:hover {
+    border-bottom: none;
+    text-shadow: 0.02rem 0.02rem 0.02rem red;
+  }
+
+  @keyframes slide-in {
+    from {
+      transform: translateX(-50%);
+      opacity: 0.25;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
   }
 }
 
