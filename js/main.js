@@ -17,14 +17,26 @@ howToButtonElement.addEventListener("click", function (event) {
   }
 });
 
-const ingredientsElement = document.getElementsByClassName("ingredients")[0];
+const ingredientsButtonElement = document.querySelector("#ingredients-button");
+const ingredientsTextElement = document.querySelector(".ingredients");
+const ingredientsPlusElement = document.querySelector("#plus-id");
 
-howToButtonElement.addEventListener("click", function (event) {
-  if (ingredientsElement.style.display === "none") {
-    ingredientsElement.style.display = "block";
-    howToPlusElement.innerText = "-";
+ingredientsButtonElement.addEventListener("click", function (event) {
+  if (ingredientsTextElement.style.display === "none") {
+    ingredientsTextElement.style.display = "block";
+    ingredientsPlusElement.innerText = "-";
   } else {
-    ingredientsElement.style.display = "none";
-    howToPlusElement.innerText = "+";
+    ingredientsTextElement.style.display = "none";
+    ingredientsPlusElement.innerText = "+";
   }
+});
+
+const addToCartElement = document.querySelector(".add-to-cart");
+
+addToCartElement.addEventListener("click", function (event) {
+  cartQuantity++;
+  localStorage.setItem("cartQuantity", cartQuantity);
+  cartContainerElement.style.display = "grid";
+  shoppingCartElement.style.display = "grid";
+  inputElement.value = cartQuantity;
 });
