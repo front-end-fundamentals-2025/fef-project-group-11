@@ -93,7 +93,7 @@ h3 {
 }
 
 span {
-  margin-left: 7.5rem;
+  margin-left: 3.5rem;
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
@@ -107,7 +107,7 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
   img {
-    width: 100%;
+    max-width: 25rem;
   }
   span {
     margin-left: 3.6rem;
