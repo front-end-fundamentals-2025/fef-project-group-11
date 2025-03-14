@@ -27,6 +27,8 @@ ingredientsButtonElement.addEventListener("click", function (event) {
   }
 });
 
+/*ADD TO CART*/
+
 const addToCartElement = document.querySelector(".add-to-cart");
 
 addToCartElement.addEventListener("click", function (event) {
