@@ -13,6 +13,10 @@ let cartElement = parseInt(localStorage.getItem("cartQuantity")) || 0;
 inputElement.value = cartElement.toString();
 let cartQuantity = cartElement;
 
+const totalPriceElement = document.querySelector("#input-price");
+let priceElement = parseInt(localStorage.getItem("totalPrice")) || 0;
+totalPriceElement.value = priceElement * cartQuantity;
+
 inputElement.value = cartQuantity;
 
 /*BIG SCREEN CART BUTTON*/
@@ -25,6 +29,11 @@ cartButtonElement.addEventListener("click", function (event) {
     shoppingCartElement.style.display === ""
   ) {
     shoppingCartElement.style.display = "grid";
+  }
+  if (cartQuantity > 0) {
+    cartContainerElement.style.display = "grid";
+  } else {
+    cartContainerElement.style.display = "none";
   }
 });
 
@@ -56,10 +65,9 @@ inputElement.value = cartQuantity.toString();
 
 const decrementElement = document.querySelector("#decrement");
 const incrementElement = document.querySelector("#increment");
-const totalPriceElement = document.querySelector("#input-price");
 
 let pricePerItem = 199;
-let pricePerItemElement = parseInt(localStorage.getItem("pricePerItem")) || 199;
+let pricePerItemElement = parseInt(localStorage.getItem("pricePerItem"));
 
 decrementElement.addEventListener("click", function (event) {
   cartQuantity--;
@@ -70,6 +78,7 @@ decrementElement.addEventListener("click", function (event) {
   if (cartQuantity < 1) {
     localStorage.removeItem("cartQuantity");
     localStorage.removeItem("pricePerItem");
+    localStorage.removeItem("totalPrice");
     shoppingCartElement.style.display = "none";
     cartContainerElement.style.display = "none";
   }

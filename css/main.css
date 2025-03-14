@@ -213,7 +213,7 @@ a:hover {
 }
 
 .cart-container {
-  display: grid;
+  display: none;
   grid-template-columns: repeat (2, 1fr);
   grid-template-rows: repeat (2, 1fr);
   align-items: start;
