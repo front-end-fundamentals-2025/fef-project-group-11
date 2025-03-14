@@ -92,25 +92,6 @@ incrementElement.addEventListener("click", function (event) {
   totalPriceElement.value = cartQuantity * pricePerItem;
 });
 
-//First version
-
-// decrementElement.addEventListener("click", function (event) {
-//   cartQuantity--;
-//   localStorage.setItem("cartQuantity", cartQuantity);
-//   inputElement.value = cartQuantity;
-//   if (cartQuantity < 1) {
-//     shoppingCartElement.style.display = "none";
-//     cartContainerElement.style.display = "none";
-//     localStorage.removeItem("cartQuantity");
-//   }
-// });
-
-// incrementElement.addEventListener("click", function (event) {
-//   cartQuantity++;
-//   localStorage.setItem("cartQuantity", cartQuantity);
-//   inputElement.value = cartQuantity;
-// });
-
 /*HAMBURGER MENU OPEN/CLOSE*/
 
 const hamburgerButtonElement = document.querySelector("#hamburger-button");
