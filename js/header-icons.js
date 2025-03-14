@@ -12,12 +12,11 @@ const inputElement = document.querySelector("#input");
 let cartElement = parseInt(localStorage.getItem("cartQuantity")) || 0;
 inputElement.value = cartElement.toString();
 let cartQuantity = cartElement;
+inputElement.value = cartQuantity;
 
 const totalPriceElement = document.querySelector("#input-price");
 let priceElement = parseInt(localStorage.getItem("totalPrice")) || 0;
 totalPriceElement.value = priceElement * cartQuantity;
-
-inputElement.value = cartQuantity;
 
 /*BIG SCREEN CART BUTTON*/
 
@@ -119,7 +118,9 @@ const hamburgerContainerElement = document.querySelector(
 hamburgerButtonElement.addEventListener("click", function (event) {
   if (hamburgerContainerElement.style.display === "none") {
     hamburgerContainerElement.style.display = "flex";
+    document.body.classList.add("no-scroll"); // Code from Klaudia
   } else {
     hamburgerContainerElement.style.display = "none";
+    document.body.classList.remove("no-scroll"); // Code from Klaudia
   }
 });

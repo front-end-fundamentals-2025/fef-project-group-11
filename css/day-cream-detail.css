@@ -130,6 +130,8 @@ h1 {
   animation: slide-in 1100ms;
 }
 
+/*ANIMATION BUTTONS HOW-TO AND INGREDIENTS*/
+
 @keyframes slide-in {
   from {
     transform: translateY(-30%);
@@ -183,6 +185,9 @@ h1 {
   .price {
     text-align: center;
   }
+  footer {
+    margin-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -203,5 +208,8 @@ h1 {
   }
   .price {
     text-align: center;
+  }
+  footer {
+    margin-top: 3rem;
   }
 }
