@@ -12,6 +12,13 @@ main {
   }
 }
 
+/*HAMBURGER MENU*/
+
+.hamburger-container {
+  bottom: 65%;
+  margin-top: 4.1rem;
+}
+
 /*ALL PRODUCTS*/
 
 h2 {

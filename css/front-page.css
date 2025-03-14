@@ -1,5 +1,14 @@
+/*HAMBURGER MENU*/
+
+.hamburger-container {
+  bottom: 65%;
+  margin-top: 4.6rem;
+}
+
 /*ROLLING BANNER*/
 .offer-text {
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   height: 3rem;
@@ -12,6 +21,7 @@
   background-color: pink;
   margin-bottom: 0;
   color: var(--red);
+  width: 100%;
 }
 
 .buy-three {
@@ -33,6 +43,7 @@
   position: absolute;
   white-space: nowrap;
   animation: scroll 15s linear infinite;
+  max-width: 100vw;
 }
 
 @keyframes scroll {

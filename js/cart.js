@@ -23,7 +23,13 @@ inputElement.value = cartQuantity;
 
 cartButtonElement.addEventListener("click", function (event) {
   localStorage.setItem("cartQuantity", cartQuantity);
+  localStorage.setItem(
+    "priceElement * cartQuantity",
+    priceElement * cartQuantity
+  );
   inputElement.value = cartQuantity;
+  totalPriceElement.value = priceElement * cartQuantity;
+
   if (
     shoppingCartElement.style.display === "none" ||
     shoppingCartElement.style.display === ""
@@ -43,12 +49,23 @@ const mobileCartButtonElement = document.getElementById("mobile-cart-button");
 
 mobileCartButtonElement.addEventListener("click", function (event) {
   localStorage.setItem("cartQuantity", cartQuantity);
+  localStorage.setItem(
+    "priceElement * cartQuantity",
+    priceElement * cartQuantity
+  );
   inputElement.value = cartQuantity;
+  totalPriceElement.value = priceElement * cartQuantity;
+
   if (
     shoppingCartElement.style.display === "none" ||
     shoppingCartElement.style.display === ""
   ) {
     shoppingCartElement.style.display = "grid";
+  }
+  if (cartQuantity > 0) {
+    cartContainerElement.style.display = "grid";
+  } else {
+    cartContainerElement.style.display = "none";
   }
 });
 
