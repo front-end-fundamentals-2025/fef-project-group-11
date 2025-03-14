@@ -13,18 +13,33 @@ let cartElement = parseInt(localStorage.getItem("cartQuantity")) || 0;
 inputElement.value = cartElement.toString();
 let cartQuantity = cartElement;
 
+const totalPriceElement = document.querySelector("#input-price");
+let priceElement = parseInt(localStorage.getItem("totalPrice")) || 0;
+totalPriceElement.value = priceElement * cartQuantity;
+
 inputElement.value = cartQuantity;
 
 /*BIG SCREEN CART BUTTON*/
 
 cartButtonElement.addEventListener("click", function (event) {
   localStorage.setItem("cartQuantity", cartQuantity);
+  localStorage.setItem(
+    "priceElement * cartQuantity",
+    priceElement * cartQuantity
+  );
   inputElement.value = cartQuantity;
+  totalPriceElement.value = priceElement * cartQuantity;
+
   if (
     shoppingCartElement.style.display === "none" ||
     shoppingCartElement.style.display === ""
   ) {
     shoppingCartElement.style.display = "grid";
+  }
+  if (cartQuantity > 0) {
+    cartContainerElement.style.display = "grid";
+  } else {
+    cartContainerElement.style.display = "none";
   }
 });
 
@@ -34,12 +49,23 @@ const mobileCartButtonElement = document.getElementById("mobile-cart-button");
 
 mobileCartButtonElement.addEventListener("click", function (event) {
   localStorage.setItem("cartQuantity", cartQuantity);
+  localStorage.setItem(
+    "priceElement * cartQuantity",
+    priceElement * cartQuantity
+  );
   inputElement.value = cartQuantity;
+  totalPriceElement.value = priceElement * cartQuantity;
+
   if (
     shoppingCartElement.style.display === "none" ||
     shoppingCartElement.style.display === ""
   ) {
     shoppingCartElement.style.display = "grid";
+  }
+  if (cartQuantity > 0) {
+    cartContainerElement.style.display = "grid";
+  } else {
+    cartContainerElement.style.display = "none";
   }
 });
 
@@ -56,10 +82,9 @@ inputElement.value = cartQuantity.toString();
 
 const decrementElement = document.querySelector("#decrement");
 const incrementElement = document.querySelector("#increment");
-const totalPriceElement = document.querySelector("#input-price");
 
 let pricePerItem = 199;
-let pricePerItemElement = parseInt(localStorage.getItem("pricePerItem")) || 199;
+let pricePerItemElement = parseInt(localStorage.getItem("pricePerItem"));
 
 decrementElement.addEventListener("click", function (event) {
   cartQuantity--;
@@ -70,6 +95,7 @@ decrementElement.addEventListener("click", function (event) {
   if (cartQuantity < 1) {
     localStorage.removeItem("cartQuantity");
     localStorage.removeItem("pricePerItem");
+    localStorage.removeItem("totalPrice");
     shoppingCartElement.style.display = "none";
     cartContainerElement.style.display = "none";
   }
@@ -82,25 +108,6 @@ incrementElement.addEventListener("click", function (event) {
   inputElement.value = cartQuantity;
   totalPriceElement.value = cartQuantity * pricePerItem;
 });
-
-//First version
-
-// decrementElement.addEventListener("click", function (event) {
-//   cartQuantity--;
-//   localStorage.setItem("cartQuantity", cartQuantity);
-//   inputElement.value = cartQuantity;
-//   if (cartQuantity < 1) {
-//     shoppingCartElement.style.display = "none";
-//     cartContainerElement.style.display = "none";
-//     localStorage.removeItem("cartQuantity");
-//   }
-// });
-
-// incrementElement.addEventListener("click", function (event) {
-//   cartQuantity++;
-//   localStorage.setItem("cartQuantity", cartQuantity);
-//   inputElement.value = cartQuantity;
-// });
 
 /*HAMBURGER MENU OPEN/CLOSE*/
 
